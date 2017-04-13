@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ROOM CHECKING APP - LOGIN</title>
+<style type="text/css">
+#login-page{
+	margin: 100px 100px 100px 100px;
+	border: thin;
+	border-radius: 20px;
+	box-shadow: 10px;
+}
+ h4{
+ 	text-align: center;
+ }
+ #st{
+ 	text-align: center;
+ }
+ input[type="text"]{
+ 	border-radius: 10px;
+ }
+ input[type="password"]{
+ 	border-radius: 10px;
+ }
+ input[type= "submit"]{
+ 	border-radius: 10px;
+ 	height: = 35px;
+ 	font-weight: bolder;
+ 	width: 100px;
+ }
+</style>
+</body>
+<div class = "container" id = "login-page">
+	<div id = "title">
+		<h4>Welcome To Andela Room Checking App</h4>
+		<p id ="st">Login to continue</p>
+	</div>
+	<fieldset>
+		<legend>Memeber Login</legend>
+		<form name = "form" action = "" method = "POST" id ="login- form">
+			<label for "name">Name</label>
+			<input type ="text" placeholder =" Enter Name" id = "name" name ="name"/><br><br>
+			<label for "password">Password</label>
+			<input type = "password" name = "password" id="pass" placeholder = "Enter a Password"/><br><br>
+			<input type= "submit" value = "Login" onclick="validate()"/>
+
+	</form>
+	</fieldset>
+	
+</div>
+
+</body>
+</html>
