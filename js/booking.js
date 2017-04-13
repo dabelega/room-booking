@@ -21,8 +21,9 @@ var availableRooms = [new Rooms("meetingRoom2", 4, "available"), new Rooms("ches
 function showRooms(){
 
 	for(var i = 0; i<=meetingRoom.length; i++){
-		var roomText = "<p style = "background-color:gray"> " + availableRooms[i] + "</p><br/>"
+		var roomText = "<p style = "background-color:gray"> " + availableRooms[i].roomName +availableRooms[i].sizeOfRoom + availableRooms[i].booked+ "</p><br/>"
 	}
+	document.getElementById("available").innerHTML = roomText
 
 }
 
@@ -30,5 +31,5 @@ window.onLoad = function(){
 
 	document.getElementById("login").onClick = function(){login(document.getElementById("login"))}
 
-	document.getElementById("available").onClick = function(){showRooms()}
+	document.getElementById("availableRoom").onClick = function(){showRooms()}
 }
