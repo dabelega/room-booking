@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html manifest="demo.appcache">
+<meta charset="UTF-8">
+<meta name="description" content="Room Checking">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Group 6, Team1">
+<title>ROOM CHECKING APP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="/" />
+<head>
+	<script type="text/javascript" src = "./js/booking.js" id = "available"> <a href= "./js/booking.js" class="qbutton  large" target="_self" style="color: #FFFFFF;border-color: #ffffff;border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px; background-color: brown;"  data-hover-border-color='#6376F9'data-hover-background-color=red ></script>
+</head>
+<body style="background-color:#245218" >
+
+<section>
+<!-- CREATION OF ALL ROOMS AND AVAILABLE ROOMS -->
+	<form action=".../js/booking.js">
+
+  <div>
+  <p>List of Andela Rooms</p>
+  <div>
+		<select name="all rooms">
+		<option value="meetingRoom1">Meeting Room 1</option>
+		<option value="meetingRoom2">Meeting Room 2</option>
+		<option value="gamesRoom1">Chess Room</option>
+		<option value="gamesRoom2">PlayStation Room</option>
+		<option value="quieTimeRoom1">Quiet-Time Room 1</option>
+		<option value="quieTimeRoom2">Quiet-Time Room 2</option>
+		<option value="learningRoom1">Python Room</option>
+		<option value="learningRoom2">Javacript Room</option>
+		<option value="workingRoom1">TeamLeaders Room</option>
+		<option value="workingRoom2">Andela Developers Room</option>
+		</select>
+    </div>
+    </div>
+<p>Click "Available Rooms" to display the list of available Rooms</p>
+<button onclick = "available">Available Rooms</button>
+<div id ="available"></div>
+
+</form>
+</section>
+</body>
+</html>
